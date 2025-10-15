@@ -1,5 +1,5 @@
 # sanrio-site
-Site Sanrio para minha Namorada <3 - Projetinho fofo pessoal
+Site Sanrio para minha Namorada 
 
 Este é um projeto simples de site estático desenvolvido com HTML e CSS. Ele tem como objetivo servir de base para testes, aprendizado e experimentação de conceitos básicos de desenvolvimento web.
 
