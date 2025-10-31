@@ -17,7 +17,7 @@ Este é um projeto simples de site estático desenvolvido com HTML e CSS. Ele te
 Você pode clonar este repositório e abrir o arquivo `index.html` diretamente no navegador:
 
 ```bash
-git clone https://github.com/nikolasmrt/site-teste.git
+git clone https://github.com/nikolasmrt/sanrio-site
 cd site-teste
 start index.html  # (Windows)
 # ou
