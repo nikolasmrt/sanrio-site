@@ -1,107 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Kitty's World - Bem-vindo!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Bem-vindo ao mundo mágico da Sanrio. Conheça Hello Kitty, Kuromi e seus amigos!">
+    <title>Sanrio World | Landing Page Oficial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="/">
-                <img src="assets/hk-logo.png" alt="Hello Kitty Logo" style="height: 40px; vertical-align: middle;"> 
-            </a>
 
-            <div class="menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <header id="header" class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Sanrio<span class="highlight">.World</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+  
+                </ul>
+                <button class="btn btn--primary" id="theme-toggle">🌙 Modo Noturno</button>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <ul class="nav-list">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#hk-world">Mundo Hello Kitty</a></li>
-                <li><a href="#about-hk">Sobre a Hello Kitty</a></li>
-                <li><a href="#contact-hk">Contato</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Bem-vindo ao <span>Mundo da Hello Kitty!</span></h1>
-            <p>O lugar mais fofo da internet para fãs da nossa gatinha favorita!</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/hellokitty/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/hellokitty/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/hellokitty" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <main>
+        <section id="hero" class="hero section">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__tag">Bem-vindo à Fofura</span>
+                    <h1 class="hero__title">Descubra a Magia da <br> <span class="text-gradient">Sanrio</span></h1>
+                    <p class="hero__description">
+                        Explore o universo de Hello Kitty e seus amigos. Um mundo cheio de cor, amizade e aventuras incríveis espera por você.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#characters" class="btn btn--secondary">Conhecer Personagens</a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper">
+                    <div class="blob"></div>
+                    <img src="assets/img/hero-bg.jpg" alt="Ilustração da Turma da Sanrio" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <section id="characters" class="characters section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nossos Amigos</h2>
+                    <p class="section__subtitle">Escolha o seu favorito para saber mais</p>
+                </div>
+                
+                <div id="character-grid" class="grid-layout">
+                    </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter section">
+            <div class="container newsletter__container">
+                <div class="newsletter__content">
+                    <h2>Fique por dentro!</h2>
+                    <p>Receba novidades sobre lançamentos e eventos exclusivos.</p>
+                    <form class="newsletter__form" id="newsletter-form">
+                        <input type="email" placeholder="Seu melhor e-mail..." required aria-label="Email">
+                        <button type="submit" class="btn btn--primary">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; 2025 Sanrio Fan Project. Desenvolvido com 💖 e Código Limpo.</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/hellokitty/">Instagram</a>
+                <a href="https://x.com/hellokitty">Twitter</a>
+                <a href="https://www.youtube.com/@HelloKittyEAmigosBrasil">Youtube</a>
+                <a href="https://discord.com/invite/sanriohub">Discord</a>
             </div>
         </div>
-        <div class="hero-img">
-            <img src="assets/hello-kitty-main.jpg" alt="Hello Kitty">
-        </div>
-    </section>
+    </footer>
 
-    <section class="portfolio-section" id="hk-world">
-        <h2>Explore o Mundo da Hello Kitty</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="assets/hk-item1.jpg" alt="Personagens Sanrio">
-                <h3>Amigos da Hello Kitty</h3>
-                <p>Conheça a My Melody, Keroppi, Little Twin Stars e todos os adoráveis amigos!</p>
-                <a href="https://www.sanrio.com.br/#" target="_blank">Ver Amigos</a>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/hk-item2.jpg" alt="Produtos Hello Kitty">
-                <h3>Coleção de Produtos</h3>
-                <p>Descubra as últimas novidades em roupas, acessórios e itens de decoração da Hello Kitty.</p>
-                <a href="https://loja.mercadolivre.com.br/hello-kitty" target="_blank">Ver Coleção</a>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/hk-item3.jpg" alt="Onde assistir Hello Kitty">
-                <h3>Onde assistir</h3>
-                <p>Divirta-se com desenhos animados, filmes e jogos estrelados pela Hello Kitty e sua turma.</p>
-                <a href="https://www.youtube.com/hellokittybrasil" target="_blank">Ver Mídia</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-section" id="about-hk">
-        <h2>Sobre a Hello Kitty</h2>
-        <p>
-            A Hello Kitty, cujo nome verdadeiro é Kitty White, nasceu em 1º de novembro em Londres, Inglaterra. 
-            Ela é uma gatinha alegre e de bom coração que ama fazer novos amigos e viajar. 
-            Seu lema é "nunca se pode ter muitos amigos".
-        </p>
-        <p>
-            Ela adora cozinhar biscoitos, brincar no parque e, acima de tudo, colecionar coisas fofas! 
-            Sua marca registrada é seu icônico laço vermelho, que ela usa em sua orelha esquerda. 
-            Com seus mais de 50 anos, a Hello Kitty continua a encantar fãs de todas as idades ao redor do mundo.
-        </p>
-        <div class="hk-facts">
-            <h3>Fatos Curiosos:</h3>
-            <ul>
-                <li>💖 Não é uma gata, mas sim uma garota.</li>
-                <li>💖 Adora torta de maçã feita pela mamãe.</li>
-                <li>💖 Tem uma irmã gêmea chamada Mimmy.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="contact-section" id="contact-hk">
-        <h2>Fale Conosco</h2>
-        <p>Tem uma pergunta, sugestão ou quer compartilhar seu amor pela Hello Kitty? Envie uma mensagem!</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu Email" required>
-            <textarea placeholder="Sua Mensagem Fofa" rows="5" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-    </section>
-
-    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
