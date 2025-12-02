@@ -6,6 +6,10 @@
 
 > **"Site Sanrio para minha Namorada <3"**
 
+🔗 **Acesse o projeto online:** [**sanriobrasil.vercel.app**](https://sanriobrasil.vercel.app)
+
+---
+
 Uma Landing Page temática, interativa e totalmente responsiva, desenvolvida como um presente especial e também como um projeto de estudo avançado em Front-end Development. O projeto apresenta os personagens favoritos do universo Sanrio com uma interface moderna e "kawaii".
 
 ## ✨ Funcionalidades
